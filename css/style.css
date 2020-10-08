@@ -1,0 +1,70 @@
+body{
+    background: #7689A9;
+    display: grid;
+    grid-template-columns: 30% auto;
+    grid-template-rows: 80px auto auto;
+    grid-template-areas: "hr hr" "aside main" "ft ft";
+}
+
+footer{
+    background: #152c55;
+    color: white;
+    padding: 5px 0 2px 15px;
+    grid-area: ft;
+}
+
+header{
+    background: #152c55;
+    color: white;
+    grid-area: hr;
+}
+
+aside{
+    background: #45658D;
+    grid-area: aside;
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 60px;
+}
+
+aside button{
+    margin: 5px 10px;
+    flex-grow: 1;
+}
+
+main{
+    grid-area: main;
+    background: aliceblue;
+    box-shadow: #404040 5px 5px 3px;
+    margin: 10px;
+    padding: 0px 10px;
+}
+
+header nav ul{
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+}
+
+ul a{
+    color: white;
+}
+
+header nav ul li{
+    text-align: center;
+    flex-basis: 15%;
+}
+
+#hraj{
+    flex-grow: 3;
+}
+
+#galeria{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+#galeria img {
+    margin: 15px;
+}
