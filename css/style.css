@@ -1,0 +1,62 @@
+header{
+    background: #882D61;
+    grid-area: hd;
+}
+
+body {
+    background: #EDB8DF;
+    display: grid;
+    grid-template-columns: 30% auto;
+    grid-template-rows: 90px auto 40px;
+    grid-template-areas: "hd hd" "aside main" "ft ft";
+}
+
+aside{
+    background: #764B8E;
+    grid-area: aside;
+    display: flex;
+    flex-direction: column;
+    padding: 5px 10px;
+}
+
+aside button{
+    margin: 5px 0;
+}
+
+footer{
+    background: #882D61;
+    grid-area: ft;
+}
+
+main{
+    grid-area: main;
+    padding-left: 20px;
+}
+
+nav{
+    height: 100%;
+}
+
+nav ul {
+    display: flex;
+    list-style-type: none;
+    justify-content: center;
+    height: 100%;
+    margin: 0;
+}
+
+nav ul li{
+    display: flex;
+    flex-basis: 20%;
+    align-items: center;;
+}
+
+#galeria{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+}
+
+#galeria img {
+    margin: 10px 10px;
+}
