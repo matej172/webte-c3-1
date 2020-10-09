@@ -1,70 +1,75 @@
 body{
-    background: #7689A9;
+    background: #F8A6AC;
     display: grid;
+    min-height: 100vh;
     grid-template-columns: 30% auto;
-    grid-template-rows: 80px auto auto;
-    grid-template-areas: "hr hr" "aside main" "ft ft";
+    grid-template-rows: 50px auto 30px;
+    grid-template-areas: 'hd hd' 'as ma' 'ft ft';
+    margin: 0;
+}
+
+header nav{
+    height: 100%;
+}
+
+footer, header{
+    background: #A6373F;
+    color: white;
+}
+
+a {
+    color: white;
+}
+
+
+main{
+    grid-area: ma;
+    margin: 10px;
+    background: #FFDDDD;
+    box-shadow: 3px 3px 5px #808080;
+    padding: 0 10px;
 }
 
 footer{
-    background: #152c55;
-    color: white;
-    padding: 5px 0 2px 15px;
     grid-area: ft;
 }
 
 header{
-    background: #152c55;
-    color: white;
-    grid-area: hr;
+    grid-area: hd;
+}
+
+header nav ul{
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    height: 100%;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+header nav ul li{
+    margin-right: 50px;
 }
 
 aside{
-    background: #45658D;
-    grid-area: aside;
+    background: #CF676F;
+    grid-area: as;
     display: flex;
     flex-direction: column;
-    padding-bottom: 60px;
 }
 
 aside button{
     margin: 5px 10px;
-    flex-grow: 1;
 }
 
-main{
-    grid-area: main;
-    background: aliceblue;
-    box-shadow: #404040 5px 5px 3px;
-    margin: 10px;
-    padding: 0px 10px;
-}
-
-header nav ul{
-    list-style: none;
+#gallery{
     display: flex;
-    justify-content: flex-end;
-}
-
-ul a{
-    color: white;
-}
-
-header nav ul li{
-    text-align: center;
-    flex-basis: 15%;
-}
-
-#hraj{
-    flex-grow: 3;
-}
-
-#galeria{
-    display: flex;
-    align-items: center;
     flex-wrap: wrap;
+    align-items: start;
+    justify-content: space-around;
 }
 
-#galeria img {
-    margin: 15px;
+#gallery img{
+    margin: 10px 0;
 }
